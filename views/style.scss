@@ -1,4 +1,22 @@
+html {
+  background: #444;
+}
 body {
-  background: #eee;
+  background: #ddd;
   color: #111;
+  width: 600px;
+  padding: 40px;
+  margin: 20px auto;
+}
+nav {
+  overflow: hidden;
+  a {
+    display: block;
+    float: left;
+    margin: 0;
+    padding: 5px 15px;
+    &:hover {
+      background: #fff;
+    }
+  }
 }

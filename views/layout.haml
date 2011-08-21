@@ -1,7 +1,15 @@
 !!! 5
 %html
   %head
-    %title title
+    %title= @title
     %link{:rel=>:stylesheet,:href=>'/style.css'}
+  %body
+    %nav
+      %a{:href=>'/'} Home
+      %a{:href=>'/about'} About
+      %a{:href=>'/contact'} Contact
+    #content= yield
+    %footer
+      %p= Time.new
+    %script{:src=>'//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.js'}
     %script{:src=>'/pjaxify.js'}
-  %body= yield
